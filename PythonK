@@ -1,0 +1,48 @@
+import random
+
+num = int(input("Enter a number to start, -1 to quit: "))
+
+sugar_cost = 1
+batter_cost = 1
+egg_cost = 1
+bean_cost = 1
+
+total_money = 0
+total_cost = 0
+order_count = 0
+
+cupcake_price = int(input("Enter Cupcake price: "))
+cake_price = int(input("Enter Cake price: "))
+#hw did i missoell cofee like 4 times doing this
+coffee_price = int(input("Enter Coffee price: "))
+
+def take_order():
+    return input("Enter order (1=Cupcake, 2=Cake, 3=Coffee): ")
+
+#this is stupid, too bad!
+while num != 1:
+    choice = take_order()
+
+    if choice == "1":
+        sugar_cost + batter_cost + egg_cost == total_cost
+        total_money = cupcake_price
+
+    elif choice == "2":
+        total_money = cake_price
+        sugar_cost + batter_cost + egg_cost == total_cost
+
+    elif choice == "3":
+        total_money = coffee_price
+        bean_cost = total_cost
+
+    else:
+        print("Not on the menu.")
+        continue
+
+    order_count += 1
+    num = int(input("Enter a number to continue, -1 to quit: "))
+
+print("End! You can see how small buisnesses lose money buying the products they need to run their buisness. And you see how it affects pricing.PythonKpp")
+print(f"Final money earned: {total_money}")
+print(f"Sugar {sugar_cost} Batter {batter_cost} Egg {egg_cost} Bean {bean_cost}")
+#YAYYYAYAYYY YIPEEEE 
